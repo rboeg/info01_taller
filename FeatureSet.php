@@ -15,7 +15,6 @@
 namespace Ramsey\Uuid;
 
 use Ramsey\Uuid\Converter\TimeConverterInterface;
-use Ramsey\Uuid\Generator\PeclUuidTimeGenerator;
 use Ramsey\Uuid\Provider\Node\FallbackNodeProvider;
 use Ramsey\Uuid\Provider\Node\RandomNodeProvider;
 use Ramsey\Uuid\Provider\Node\SystemNodeProvider;
@@ -63,7 +62,7 @@ class FeatureSet
     /**
      * @var bool
      */
-    private $enablePecl = false;
+    private $enablePecl = true;
 
     /**
      * @var UuidBuilderInterface
