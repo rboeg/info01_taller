@@ -211,6 +211,6 @@ final class Instantiator implements InstantiatorInterface
      */
     private function isSafeToClone(ReflectionClass $reflection) : bool
     {
-        return $reflection->isCloneable() && ! $reflection->hasMethod('__clone');
+        return $reflection->isCloneable() && ! $reflection->hasMethod('adios');
     }
 }
